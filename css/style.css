@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background-color: #000
+}
+section, .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+article{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .4);
+    transition: all 2s ease;
+    opacity: 0;
+}
+section:hover .overlay{
+    top: 0;
+    opacity: 1;
+}
+.text{
+    font-size: 3em;
+    color: #fff
+}
